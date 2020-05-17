@@ -1,0 +1,23 @@
+ul.routesList {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(auto-fill, 1fr) 80px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        text-align: center;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: cadetblue;
+        cursor: pointer;
+        color: white;
+
+        &:hover {
+            background-color: darken($color: cadetblue, $amount: 5);
+        }
+    }
+}
