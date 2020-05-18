@@ -1,0 +1,33 @@
+.stopPoints {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 3px;
+        width: 3px;
+        height: 100%;
+        background-color: #5f9ea066;
+    }
+
+    li {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: cadetblue;
+            border-radius: 50px;
+            left: 0;
+            top: 5px;
+        }
+    }
+}

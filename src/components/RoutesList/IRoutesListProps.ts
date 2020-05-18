@@ -1,4 +1,5 @@
 export interface IRoutesListProps {
-    routes: string[];
-    click: (id: string) => void;
+    routes: string[][];
+    setActiveRow: (id: string) => void;
+    activeRow: string;
 }

@@ -1,0 +1,30 @@
+ul.routes__container {
+    display: grid;
+    grid-template-columns: repeat(20, 6.6%);
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li.routes__li {
+    padding: 5px 10px;
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    text-align: center;
+    position: relative;
+
+    &:hover {
+        background-color: darken($color: cadetblue, $amount: 10);
+    }
+}
+
+li.routes__li_active {
+    @extend li.routes__li;
+    background-color: darken($color: cadetblue, $amount: 10);
+}
+
+.routes__title {
+    padding: 10px 0;
+}
