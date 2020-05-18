@@ -12,6 +12,7 @@
     "@types/react-dom": "^16.9.8",
     "autoprefixer": "^9.8.0",
     "axios": "^0.19.2",
+    "google-maps-react": "^2.0.6",
     "papaparse": "^5.2.0",
     "postcss-loader": "^3.0.0",
     "react": "^16.13.1",

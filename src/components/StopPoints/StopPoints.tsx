@@ -2,11 +2,11 @@ import React from "react";
 
 import { IStopPointsProps } from "./IStopPointsProps";
 
-import styles from "./RoutesList.module.scss";
+import styles from "./StopPoints.module.scss";
 
 const stopPoints: React.SFC<IStopPointsProps> = (props) => {
     return (
-        <ul>
+        <ul className={styles.stopPoints}>
             {
                 props.stops
                     ? props.stops.map(stop => (
